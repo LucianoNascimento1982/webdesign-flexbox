@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 * {
    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    margin-bottom: 30px;
+  
+}
+h2{
+    background-color: orangered;
+}
+spam{color:orangered;}
+
+    a{ 
+        color:orangered; }
+
 header {
     
     padding:10px 10px 0px 10px;
@@ -11,17 +24,31 @@ header {
     display :flex;  
 }
 header img{
-    margin-right:calc(50%-44.15px);
+    margin-left:80px;
     height: 50px;
 }
 i {  
     color:white;
     font-size: 40px;
 }
-/*body{
+#sessão principal{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+body{font-family: 'Shadows Into Light', cursive;
   
-}*/
-#sessão principal figure img {width:80%;
+}
+#sessão principal figure{
+    width: 30px;
+    height:30%;
+}
+#sessão principal figure  {
+    display:flex;
+    justify-content: center;
+    width:80%;
+    border:1px red;
 }
 header nav {display :none; 
 }
