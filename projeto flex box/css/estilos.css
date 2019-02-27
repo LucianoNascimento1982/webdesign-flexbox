@@ -1,58 +1,186 @@
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono'); */
+/* Reset de propriedades */
 * {
-   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    margin-bottom: 30px;
-  
+ body {
+    font-family: 'Ubuntu Mono',cursive,monospace;
+     color : gray;
+ }
+ spam{ color:orangered;}
+     
+     /* Mobile First - CSS do mobile */
+header input{
+    display:none;
 }
-h2{
-    background-color: orangered;
+header input:checked ~ nav{
+    left:0;
 }
-spam{color:orangered;}
-
-    a{ 
-        color:orangered; }
 
 header {
-    
-    padding:10px 10px 0px 10px;
-    background-color: black;
-    display :flex;  
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     padding: 5px 5px 0 5px;
+     background-color: black;
+     text-decoration: none;
+     padding-bottom:5px;
+   
+}
+header i {
+    color:white;   
+    font-size:2px;
 }
 header img{
-    margin-left:80px;
-    height: 50px;
+    height: 55px;
+    margin-right:calc(50% - (97.5px / 2));
 }
-i {  
-    color:white;
-    font-size: 40px;
+header input {
+    display: none;
 }
-#sessão principal{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+header input :checked ~ nav {
+    display: flex;
+}
+header nav {
+    display: flex;
+    flex-direction:column; 
+    position:absolute;
+    padding: 0 10px;
+    top: 54px;
+    left:-100%;
+    width: 100%;
+    padding: 0 10% 5px 10px;
+    color: white;
+    background-color: black;
+    transition:left 2s;
+}
+header nav a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}  
+header a:hover
+ {   
+    background-color:  orangered;
+    border-radius: 3px;
+ }
+
+ a {  
+   background-color:orangered;
+   display:inline-block; 
+   border-radius:10px;
+   margin-top: 20px;
+   padding:10px 15px;
+   text-decoration: none;
+   font-size: 0.85rem;
+   color:white;
+   margin-bottom: 20px;
+ }
+
+main {
+    padding-top: 20px;
+    padding-left:10PX;
+    padding-right:10px;
+}
+#sessao-principal {
+    padding-bottom: 20px;
+    border-bottom: 3px gold;
+}
+#sessao-principal figure {
+    display: flex;
+    justify-content: center;
+}
+#sessao-principal figure img {
+    height: 150px;
+    margin-left: -20px;
+}
+#sessao-principal article h1 {
+    height: 80%;
+    margin-top: 20px;
+    font-size: 1.7rem;
+    color: orangered;
+
 
 }
-body{font-family: 'Shadows Into Light', cursive;
-  
+#sessao-principal article p {
+    width: 90%;
+    margin-top: 20px;
+    font-size: 0.96rem;
+
 }
-#sessão principal figure{
-    width: 30px;
-    height:30%;
+#sessao-principal article a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
 }
-#sessão principal figure  {
-    display:flex;
-    justify-content: center;
-    width:80%;
-    border:1px red;
+#produtos {
+    margin:20px;
 }
-header nav {display :none; 
+ h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  /*  border: solid black;*/
+    background-color: orangered;
+    color:white;
+    padding-right:10px;
+    padding-left: 10px;
+
 }
-footer{
-    
-    background-color:gray;
+#article img {
+    margin-top: 10px;
+    margin: 10px;
+    float: left;
 }
+#article p {
+    font-size: 0.8rem;
+    padding: 10px;
+}
+footer {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: black;
+
+}
+footer img {
+    float: left;
+    width: 20px;;
+    margin-top: -20px;
+}
+footer p {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+footer img:first-of-type {
+    margin-left: 15px;
+}
+     /*tablet */
+@media screen and (min-width: 768px){}
+header {
+    padding: 10px 10px;
+}
+header i {
+ font-size: 3rem;
+
+}
+/*full HD*/
+@media  screen and ( max-width:1080px){}
+header {
+    padding: 20px 20px;
+}
+header i {
+ font-size: 5rem; }
