@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono'); */
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono'); 
 /* Reset de propriedades */
 * {
     margin: 0;
@@ -6,18 +6,10 @@
     box-sizing: border-box;
 }
  body {
-    font-family: 'Ubuntu Mono',cursive,monospace;
+    /* font-family: 'Ubuntu Mono',cursive,monospace; */
+    font-family: Verdana,sans-serif;
      color : gray;
  }
- spam{ color:orangered;}
-     
-     /* Mobile First - CSS do mobile */
-header input{
-    display:none;
-}
-header input:checked ~ nav{
-    left:0;
-}
 
 header {
      display: flex;
@@ -29,17 +21,29 @@ header {
      padding-bottom:5px;
    
 }
+     
+     /* Mobile First - CSS do mobile */
+header input{
+    display:none;
+}
+header input:checked ~ nav{
+    left:0;
+}
+
 header i {
     color:white;   
     font-size:2px;
 }
+
+header input {
+    display: none;
+}
+span{color:orangered;}
 header img{
     height: 55px;
     margin-right:calc(50% - (97.5px / 2));
 }
-header input {
-    display: none;
-}
+
 header input :checked ~ nav {
     display: flex;
 }
@@ -72,78 +76,67 @@ header a:hover
     background-color:  orangered;
     border-radius: 3px;
  }
+header i {
+ font-size: 2rem;
 
- a {  
-   background-color:orangered;
-   display:inline-block; 
-   border-radius:10px;
-   margin-top: 20px;
-   padding:10px 15px;
-   text-decoration: none;
-   font-size: 0.85rem;
-   color:white;
-   margin-bottom: 20px;
- }
-
+}
 main {
-    padding-top: 20px;
     padding-left:10PX;
     padding-right:10px;
 }
-#sessao-principal {
-    padding-bottom: 20px;
-    border-bottom: 3px gold;
+
+#inicio {
+    padding-top: 15px;
+    border-bottom: 2px dotted grey;
 }
-#sessao-principal figure {
-    display: flex;
-    justify-content: center;
-}
-#sessao-principal figure img {
+
+#inicio figure img {
+
     height: 150px;
-    margin-left: -20px;
+    margin-left: 15px;
 }
-#sessao-principal article h1 {
-    height: 80%;
-    margin-top: 20px;
-    font-size: 1.7rem;
-    color: orangered;
-
-
+#inicio h1 {
+    padding-top: 15px;
+    font-size: 1.2rem;
+    color:orangered;
 }
-#sessao-principal article p {
-    width: 90%;
-    margin-top: 20px;
-    font-size: 0.96rem;
-
+#inicio p {
+    padding-top: 15px;
+    font-size: 0.8rem;
 }
-#sessao-principal article a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
+#inicio a {  
+    background-color:orangered;
+    display:inline-block; 
+    border-radius:5px;
+    margin-top: 15px;
+    padding:10px 15px;
     text-decoration: none;
-    background-color: orangered;
-    color: white;
-    border-radius: 5px;
+    font-size: 0.8rem;
+    color:white;
+    margin-bottom: 20px;
+  }
+
+ #produtos {
+    margin-top: 15px;
 }
-#produtos {
-    margin:20px;
+#produtos article{
+    margin:1px solid gray;
 }
- h2 {
-    font-size: 1.1rem;
+#produtos article img{
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#produtos article h2 {
+    font-size: 1rem;
     text-transform: uppercase;
   /*  border: solid black;*/
     background-color: orangered;
     color:white;
     padding-right:10px;
     padding-left: 10px;
-
 }
-#article img {
-    margin-top: 10px;
-    margin: 10px;
-    float: left;
-}
-#article p {
+#produtos  article p {
     font-size: 0.8rem;
     padding: 10px;
 }
@@ -151,12 +144,11 @@ footer {
     margin-top: 5px;
     padding: 5px;
     background-color: black;
-
 }
 footer img {
     float: left;
     width: 20px;;
-    margin-top: -20px;
+    margin-top: -16px;
 }
 footer p {
     margin: 0 auto;
@@ -164,23 +156,12 @@ footer p {
     font-size: 0.7rem;
     text-align: center;
 }
-
 footer img:first-of-type {
     margin-left: 15px;
 }
-     /*tablet */
-@media screen and (min-width: 768px){}
-header {
-    padding: 10px 10px;
+/*tablet */
+@media screen and (min-width: 768px){    
 }
-header i {
- font-size: 3rem;
-
+/*Desktop*/
+@media  screen and ( min-width:992px){
 }
-/*full HD*/
-@media  screen and ( max-width:1080px){}
-header {
-    padding: 20px 20px;
-}
-header i {
- font-size: 5rem; }
